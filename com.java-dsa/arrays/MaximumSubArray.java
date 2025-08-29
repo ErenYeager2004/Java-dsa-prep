@@ -1,4 +1,4 @@
-import java.util.Arrays;
+package arrays;
 
 public class MaximumSubArray {
     static int maxSubArrayBrute(int[] nums) {
