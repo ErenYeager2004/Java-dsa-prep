@@ -6,23 +6,22 @@ public class QuickSort {
     static void quickSort(int[] arr, int low, int high) {
         if (low < high) {
             int partition = findPartition(arr, low, high);
-            quickSort(arr, low, partition);
+            quickSort(arr, low, partition - 1);
             quickSort(arr, partition + 1, high);
         }
     }
 
     static int findPartition(int[] arr, int low, int high) {
-        int pivot = arr[low];
+        int pivot = arr[low];  // choose first element as pivot
         int i = low;
         int j = high;
 
         while (i < j) {
-
-            while (arr[i] <= pivot && i <= high - 1) {
+            while (arr[i] <= pivot && i < high) {
                 i++;
             }
 
-            while (arr[j] > pivot && j >= low + 1) {
+            while (arr[j] > pivot && j > low) {
                 j--;
             }
 
@@ -33,11 +32,12 @@ public class QuickSort {
             }
         }
 
-        // int temp = arr[i];
-        // arr[i] = arr[j];
-        // arr[j] = temp;
-        return j;
+        // swap pivot with arr[j]
+        int temp = arr[low];
+        arr[low] = arr[j];
+        arr[j] = temp;
 
+        return j; // new pivot index
     }
 
     public static void main(String[] args) {
