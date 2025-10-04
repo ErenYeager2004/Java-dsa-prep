@@ -5,6 +5,7 @@ import java.util.Stack;
 
 public class ValidParenthesis {
     static boolean isValid(String str) {
+        boolean flag = false;
         Stack<Character> temp = new Stack<>();
         for(int i =0; i <= str.length() - 1; i++) {
             if(str.charAt(i) == '(' || str.charAt(i) == '{' || str.charAt(i) == '[') {
@@ -20,7 +21,7 @@ public class ValidParenthesis {
             }
         }
 
-        return temp.isEmpty();
+        return flag;
     }
     public static void main(String[] args) {
         String str = new Scanner(System.in).nextLine();

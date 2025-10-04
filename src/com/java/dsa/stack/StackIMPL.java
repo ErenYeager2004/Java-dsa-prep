@@ -2,9 +2,9 @@ package stack;
 
 import java.util.Scanner;
 
-public class StackIMPL extends Stack{
+public class StackIMPL<T> extends Stack<T>{
     public static void main(String[] args) {
-        Stack newStack = new StackIMPL();
+        Stack<?> newStack = new StackIMPL<>();
         newStack.menu();
     }
 
@@ -15,7 +15,8 @@ public class StackIMPL extends Stack{
             return;
         }
         System.out.println("Enter your data to push in the stack");
-        int data = new Scanner(System.in).nextInt();
+        Scanner scanner = new Scanner(System.in);
+        T data = (T) scanner;
         arr[++top] = data;
         ele++;
         System.out.println("Data pushed into the stack, current no of element present in the stack is " + ele);

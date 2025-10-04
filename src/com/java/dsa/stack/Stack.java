@@ -2,10 +2,10 @@ package stack;
 
 import java.util.Scanner;
 
-public abstract class Stack {
+public abstract class Stack<T> {
     int top = -1;
     int ele = 0;
-    int[] arr = new int[3];
+    T[] arr ;
 
     abstract void push();
 
