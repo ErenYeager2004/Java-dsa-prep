@@ -31,8 +31,7 @@ public class StackIMPLUsingLL {
         if(this.isFull()) {
             System.out.println("Stack Overflow");
             return;
-        }
-        else {
+        }else {
             int data;
             System.out.print("Enter the data : ");
             data = new Scanner(System.in).nextInt();
@@ -73,8 +72,7 @@ public class StackIMPLUsingLL {
         if(this.isEmpty()) {
             System.out.println("Empty Stack");
             return;
-        }
-        else{
+        }else {
             System.out.print("Top element in the stack " + this.head.data + "\n");
         }
     }

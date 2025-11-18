@@ -1,6 +1,7 @@
 package strings;
 
-public class JewelsAndStones {
+public class
+JewelsAndStones {
     public static void main(String[] args) {
         String jewels = "aA";
         String stone = "aAAbbbb";

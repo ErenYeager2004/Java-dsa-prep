@@ -58,7 +58,7 @@ public class HouseRobber {
         System.out.println(maxSumNonAdjacent(n-1,arr));
         int[] dp = new int[n];
         Arrays.fill(dp,-1);
-        System.out.println(maxSumNonAdjacent2(n-1,arr,dp));
+        //System.out.println(maxSumNonAdjacent2(n-1,arr,dp));
         System.out.println(maxSumNonAdjacent3(n-1,arr));
         System.out.println(maxSumNonAdjacent4(arr));
     }

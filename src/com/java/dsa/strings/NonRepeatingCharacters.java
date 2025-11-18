@@ -4,7 +4,7 @@ import java.util.LinkedHashMap;
 import java.util.Map;
 
 public class NonRepeatingCharacters {
-    static char NonRepeatingCharacters(String str) {
+    static char nonRepeatingCharacters(String str) {
         Map<Character, Integer> map = new LinkedHashMap<>();
 
         // Count frequencies
@@ -24,6 +24,6 @@ public class NonRepeatingCharacters {
 
     public static void main(String[] args) {
         String str = "geeksforgeeks";
-        System.out.println(NonRepeatingCharacters(str)); // Output: f
+        System.out.println(nonRepeatingCharacters(str)); // Output: f
     }
 }
