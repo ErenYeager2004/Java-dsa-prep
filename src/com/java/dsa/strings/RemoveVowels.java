@@ -12,7 +12,7 @@ public class RemoveVowels {
         return sb.toString();
     }
     public static void main(String[] args) {
-        String str = "Debjit";
+        String str = "Debjit Saha";
         System.out.println(removeVowels(str));
     }
 }
