@@ -1,6 +1,6 @@
 package dynamicProgramming;
 public class HouseRobber2 {
-    public static int Robbery(int[]arr){
+    public static int robbery(int[]arr){
         //base cases
         if(arr.length == 0)  return 0;
         if(arr.length == 1) return arr[0];
@@ -30,6 +30,6 @@ public class HouseRobber2 {
     }
     public static void main(String[] args) {
         int [] arr = {1,3,4,5};
-        System.out.println(Robbery(arr));
+        System.out.println(robbery(arr));
     }
 }
